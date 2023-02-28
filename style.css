@@ -1,0 +1,200 @@
+*:root{
+    --skills-bar-length: 0%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    position: relative;
+    padding-bottom: 4rem;
+    text-align: center; 
+    border: 10px solid white;
+}
+
+h3{
+    text-align: center;
+}
+.infoizq{
+    float: left;
+    position: relative;
+    width: 30%; 
+    height: auto;
+    background-color: #619099;
+ 
+}
+.infoderecha{
+    position: relative;
+    float: left;
+    width: 70%;
+    /*border: steelblue solid 1px;*/
+    height: auto;
+    
+}
+.foto{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 45%; 
+}
+.descargafoto{
+    width: 5%;
+}
+.email, .linkedin{
+    width: 5%;
+}
+.resumen, .descarga, .social,.habilidades{
+    width:70% ;
+    margin:0px auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+.resumen p{
+    text-align: justify;
+}
+
+.skills__bar, .skills__bar::after{
+    position: relative;
+    width: 100px;
+    height: 6px;
+    background-color: #6D583C;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+.skills__bar::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    left: -100px;
+}
+.skills__bar--70::after{
+    transform: translateX(70%);
+}
+.skills__bar--50::after{
+    transform: translateX(50%);
+}
+.skills__bar--90::after{
+    transform: translateX(90%);
+}
+.skills__bar--20::after{
+    transform: translateX(20%);
+   
+}
+.skills__bar--100::after{
+    transform: translateX(100%);
+}
+.skills__bar--83::after{
+    transform: translateX(83%);
+}
+.social img, .descarga img{
+    filter: invert();
+}
+
+
+.infoizq h3, .infoderecha h3{
+    letter-spacing: 6px;
+    font-family: 'Phudu', cursive;
+    padding-bottom: 15px;
+    padding-top:10px;
+    font-size: x-large;
+}
+.habilidades li, .social a, .descarga a, .habilidades abbr{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+}
+.nombre{
+    padding-top: 60px;
+    text-align: left;
+    margin-left: 30px;
+    font-family: 'Phudu', cursive;
+    letter-spacing: 5px;
+    font-size: x-large;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+}
+.year{
+    float: left;
+    position: relative;
+    width: 30%;
+    /*border: #4f8744 1px;*/
+    height: auto;
+    font-weight: bolder;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.exp{
+    position: relative;
+    float: left;
+    width: 70%;
+    /*border: steelblue solid 1px;*/
+    height: auto;
+    cursor: pointer;
+    text-align: justify;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.exp:hover{
+    background-color: #619099;
+    border-radius: 5px;
+}
+.experiencia, .educacion, .publicacion,.idiomas, .congreso{
+    width:80% ;
+    margin:0px auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: black;
+    padding-bottom: 150px;
+}
+.congreso img{
+    width: 4%;
+}
+.idiomas{
+    padding-top: 20px;
+}
+.idiomas .skills__bar::after{
+        content: '';
+        position: absolute;
+        background-color: #619099;
+        left: -100px;
+        cursor: pointer;
+}
+
+
+.idiomas abbr{
+    font-size: larger;
+    margin-bottom: 10px;
+}
+.c1{
+    visibility: hidden;
+    position: fixed;
+}
+
+a:hover{
+    color:black;
+}
+/*footer{
+    background-color: black;
+    padding:2rem;
+    color:white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+/*JS*/
